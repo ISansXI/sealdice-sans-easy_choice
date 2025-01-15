@@ -1,10 +1,10 @@
 {
-  "name": "a-long-story",
+  "name": "easy-choice",
   "version": "1.0.0",
   "description": "once upon a time, ...",
   "main": "build/index.js",
   "typings": "build/index.d.ts",
-  "repository": "https://github.com/sealdice/seal-swordworld",
+  "repository": "https://github.com/ISansXI/sealdice-sans-easy_choice/tree/stable",
   "license": "Apache-2.0",
   "keywords": [],
   "scripts": {
