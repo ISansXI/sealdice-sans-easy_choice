@@ -1,62 +1,28 @@
-# 海豹js扩展模板
+# 使用简介
+## 前置与须知
+本扩展基于豹骰(海豹)1.5.0-dev版本开发，理论支持新版以及新版以后的豹骰。
+本扩展不依赖于其他扩展。
 
+---
 
-### 介绍
+## 安装教程
+1.前往[Release](https://github.com/ISansXI/sealdice-sans-easy_choice/releases/tag/stable)页面下载版本
 
-一个简单易用的项目模板。
+2.打开你的豹骰后台，依次打开选项“扩展功能”->“JS扩展”
 
-使用esbuild编译代码，并将多个源码文件打包成一个。
+3.点击“上传插件”，选择你下载的JS文件
 
+4.等待上传完毕后，点击同页面的“重载JS”
 
-### 如何使用
+---
 
-clone或下载项目，随后:
-
+## 使用范例
+安装完毕后，使用.s <参数...>来使用本扩展，例如：
 ```
-npm install
-npm run build
+.s 选项1 选项2 选项3 选项4
 ```
-
-好的，现在你的项目被编译成功了，就在dist目录。
-
-默认的名字是`sealdce-js-ext.js`，其逻辑写在src/index.ts
-
-
-### 开发指南
-
-看这里，这边有大量的例子，以及海豹用户写的插件：
-
-https://github.com/sealdice/javascript
-
-由于无法动态调试，建议将纯逻辑部分独立编写，随后你就可以在调试编译后，用nodejs去验证你的想法:
-
+正常的返回应当是返回其中一个选项，比如：
 ```
-npm run build-dev
-node ./dev/sealdice-js-ext.js
+选项1
 ```
 
-当然，不止是node，任何其他js环境都行，浏览器里也行。
-
-
-### 填写个人信息
-
-当插件开发完成后(或者开始开发时)，你需要修改几处地方：
-
-* header.txt 这个文件是你插件的描述信息
-
-* tools/build-config.js 最开头一行"var filename = 'sealdce-js-ext.js';"，改成你中意的名字，注意不要与现有的重名
-
-
-### 编译和发布
-
-```
-npm run build
-```
-
-从dist目录找出你的编译结果，将其装入海豹测试并分享即可！
-
-当然，你也可以把你的劳动成果提交到这里：
-
-https://github.com/sealdice/javascript/tree/main/scripts
-
-这样用户就可以直接在海豹的插件面板进行安装了。
